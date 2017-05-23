@@ -1,0 +1,9 @@
+<h1><%= @task.name %></h1>
+<p><%= @task.details %></p>
+<% if @task.completed %>
+  <p>Task is marked as completed</p>
+  <% else %>
+  <p>Task is incomplete</p>
+  <% end  %>
+
+<%= link_to "Return to tasks", tasks_path %>
